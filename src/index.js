@@ -20,6 +20,6 @@ app.use("/api/v1/rent/user",router)
 app.use("/api/v1/rent/listing",propertyRouter)
 app.use("/api/v1/rent/user/booking", bookingrouter)
 mangoDB();
-app.listen(PORT,"::",()=>{
-    console.log("app running on port:",PORT);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log("app running on port:", PORT);
 });
